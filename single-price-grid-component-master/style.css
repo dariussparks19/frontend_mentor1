@@ -1,0 +1,134 @@
+/* Global style */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: "Karla", sans-serif;
+    background: hsl(204, 43%, 93%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    pointer-events: pointer;
+}
+
+ul{
+    list-style: none;
+}
+
+/* Main content */
+.main-content{
+    max-width: 650px;
+    margin: 60px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 15px 5px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.service-headline, 
+.service-price, 
+.service-questions{
+    padding: 40px;
+}
+
+.service-headline{
+    background: #fff;
+    border-radius: 8px 8px 0 0;
+    grid-column: 1 / -1;
+}
+
+.service-headline h1{
+    padding: 0px 0px 20px 0px;
+    color: hsl(179, 62%, 43%);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.service-headline span{
+    display: block;
+    color: hsl(71, 73%, 54%);
+    padding: 0px 0px 15px 0px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.service-headline p{
+    color: grey;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+
+.service-price{
+    background: hsl(179, 62%, 43%);
+    border-radius: 0 0 0 8px;
+}
+
+.service-price h2,
+.service-questions h2{
+    font-size: 1.46rem;
+    margin: 20px 0px;
+    color: white;
+}
+
+.price-wrapper{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    gap: 10px;
+}
+
+.price-wrapper span:first-child{
+    font-size: 2em;
+    font-weight: 700;
+    color: hsl(204, 43%, 93%);
+}
+
+.price-wrapper span:nth-child(2){
+    opacity: 0.5;
+    color: hsl(204, 43%, 93%);
+}
+
+.service-price p{
+    margin-bottom: 25px;
+    font-size: 1rem;
+    color: hsl(204, 43%, 93%);
+}
+
+.sign-up-button{
+    background: hsl(71, 73%, 54%);
+    display: block;
+    padding: 15px 0;
+    font-size: 1.1em;
+    font-weight: 700;
+    color: hsl(204, 43%, 93%);
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 15px 15px 2px rgba(0, 0, 0, 0.2);
+}
+sign-up-button:hover{
+    background: hsl(71, 73%, 44%);
+}
+
+.service-questions{
+    background: hsl(179, 45%, 52%);
+    border-radius: 0 0 8px 0;
+}
+
+.service-questions li{
+    font-size: 0.9em;
+    color: hsl(204, 43%, 93%);
+    opacity: 0.9;
+}
